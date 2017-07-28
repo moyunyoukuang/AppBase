@@ -1,0 +1,90 @@
+#pragma mark- 基础功能头文件
+//基础
+#import "BasicUISetting.h"
+#import "BLManager.h"
+#import "BLFileManager.h"
+#import "BLModel.h"
+#import "BLVC.h"
+#import "BLViews.h"
+
+//控件
+#import "BLAlertView.h"
+#import "BLNavigationVC.h"
+#import "BLMessagepop.h"
+#import "BLSelectionpop.h"
+
+
+//category
+#import "NSObject+Extension.h"
+#import "NSArray+safe.h"
+#import "path+pathsafe.h"
+#import "NSDictionary+safe.h"
+#import "NSNumber+safe.h"
+#import "NSString+Utility.h"
+#import "NSURL+safe.h"
+#import "UIFont+safe.h"
+#import "UIImage+Utility.h"
+#import "UIView+AutoLayout.h"
+#import "UIView+Extension.h"
+#import "UIView+Utility.h"
+
+//功能
+#import "MyControl.h"
+#import "CommonTool.h"
+#import "BLFunction.h"
+#import "AOColorFormat.h"
+
+//第三方 ：sdwebimage
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+
+//APP 自定义设置
+#import "AppUISetting.h"
+#import "AppVC.h"
+#import "AppManager.h"
+#import "AppNetWork.h"
+
+#pragma mark- 系统配置
+///发布自动隐藏NSLog
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+/** appurl 网络路径*/
+//#define APPUrlPath   @"http://192.168.1.87:8080/djs/app?"
+#define APPUrlPath      @"http://dajishi365.com/djs/app?"
+
+
+//返回给服务器的版本信息
+#define AppVerSionCode  @"100"
+
+//加载中显示信息
+#define LoadingTip      @""
+
+//是否开启https自认证
+#define httpsIsOpen             NO
+
+//自认证网络请求网址host
+#define ZiRenZhengHosts @[@"ykd365",@"camore"]
+
+///版本更新
+//隐藏功能时间，用于app审核
+#define AppstoreHideTime    @"2017/06/09"
+
+//appid 用于检查更新
+#define APPstoreID          @""
+//是否是appstore  yes是从appstore判断更新版本，no是从服务器判断更新版本
+#define isAppStore          YES
+
+
+
+
+
+
+
+
+
